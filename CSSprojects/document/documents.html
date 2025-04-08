@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document of Github</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="main-doc">
+        <!-- create menu bar -->
+
+        <nav id="navbar">
+            <header id="header">Version Control Documentation</header>
+            <!-- its menu -->
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#refernce">Refernce</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#community">Communtiy</a></li>
+            </ul>
+        </nav>
+
+        <!-- create main menu tabs information -->
+
+        <!-- section-1 -->
+
+        <section class="main-section" id="about">
+            <header>About</header>
+
+            <p>
+                What is “version control”, and why should you care? Version control is
+                a system that records changes to a file or set of files over time so
+                that you can recall specific versions later. For the examples in this
+                book, you will use software source code as the files being version
+                controlled, though in reality you can do this with nearly any type of
+                file on a computer. If you are a graphic or web designer and want to
+                keep every version of an image or layout (which you would most
+                certainly want to), a Version Control System (VCS) is a very wise
+                thing to use. It allows you to revert selected files back to a
+                previous state, revert the entire project back to a previous state,
+                compare changes over time, see who last modified something that might
+                be causing a problem, who introduced an issue and when, and more.
+                Using a VCS also generally means that if you screw things up or lose
+                files, you can easily recover. In addition, you get all this for very
+                little overhead. Local Version Control Systems Many people’s
+                version-control method of choice is to copy files into another
+                directory (perhaps a time-stamped directory, if they’re clever). This
+                approach is very common because it is so simple, but it is also
+                incredibly error prone. It is easy to forget which directory you’re in
+                and accidentally write to the wrong file or copy over files you don’t
+                mean to. To deal with this issue, programmers long ago developed local
+                VCSs that had a simple database that kept all the changes to files
+                under revision control.
+            </p>
+        </section>
+
+        <!-- section-2 -->
+
+        <section class="main-section" id="downloads">
+            <header>Downloads</header>
+
+            <p>
+                🧰 For Windows: <br />
+
+                ✅ Step 1: Download Git Go to the official Git website: 👉 <br>
+                https://git-scm.com/ Click on "Download for Windows" (it auto-detects
+                your OS). <br>✅ Step 2: Install Git Locate the downloaded .exe file and <br>
+                double-click it. Go through the installation wizard: Select
+                Components: Leave default options checked. Editor: Choose your
+                preferred code editor (VS Code is fine). PATH environment: Select "Git
+                from the command line and also from 3rd-party software" (recommended).
+                Leave other settings as default and click Next until Install. Click
+                Finish after installation. <br>✅ Step 3: Verify Git Installation Open
+                Command Prompt or Git Bash Type: bash Copy Edit git --version You
+                should see something like: nginx Copy Edit git version 2.x.x 💻 For
+                macOS: <br> ✅ Step 1: Use Homebrew (if installed) bash Copy Edit brew
+                install git Or <br> ✅ Step 2: Download from Git-scm Visit:
+                https://git-scm.com/download/mac Download the .dmg file and follow the
+                installation process. <br> ✅ Step 3: Verify bash Copy Edit git --version
+                🐧 For Linux (Ubuntu/Debian-based): <br>✅ Step 1: Update Packages bash
+                Copy Edit sudo apt update <br> ✅ Step 2: Install Git bash Copy Edit sudo
+                apt install git <br> ✅ Step 3: Verify bash Copy Edit git --version 🛠️ Set
+                up Git (After Installation) Open your terminal and run: bash Copy Edit
+                git config --global user.name "Your Name" git config --global
+                user.email "you@example.com" You can check config by: bash Copy Edit
+                git config --list If you want, I can also guide you through setting up
+                a GitHub repository and using Git commands like clone, add, commit,
+                and push. Want that too?
+            </p>
+        </section>
+
+        <!-- section-3 -->
+
+        <section class="main-section" id="refernce">
+
+            <header>Refernce</header>
+
+            <p>
+                Quick reference guides: GitHub Cheat Sheet | Visual Git Cheat Sheet <br>
+
+                Complete list of all commands <br>
+                Setup and Config <br>
+                git <br>
+                config<br>
+                help <br>
+                bugreport <br>
+                Credential helpers<br>
+                Getting and Creating Projects<br>
+                init<br>
+                clone<br>
+                Basic Snapshotting<br>
+                add<br>
+                status<br>
+                diff<br>
+                commit<br>
+                notes<br>
+                restore<br>
+                reset<br>
+                rm<br>
+                mv<br>
+                Branching and Merging<br>
+                branch<br>
+                checkout<br>
+                switch<br>
+                merge<br>
+                mergetool<br>
+                log<br>
+                stash<br>
+                tag<br>
+                worktree<br>
+                Sharing and Updating Projects<br>
+                fetch<br>
+                pull<br>
+                push<br>
+                remote<br>
+                submodule<br>
+                Inspection and Comparison<br>
+                show<br>
+                log<br>
+                diff<br>
+                difftool<br>
+                range-diff<br>
+                shortlog<br>
+                describe<br>
+                Patching<br>
+                apply<br>
+                cherry-pick<br>
+                diff<br>
+                rebase<br>
+
+            </p>
+        </section>
+
+        <!-- section-4 -->
+
+        <section class="main-section" id="books">
+
+            <header>Books</header>
+            <p>
+                The entire Pro Git book, written by Scott Chacon and Ben Straub and published by Apress, is available
+                here. All content is licensed under the Creative Commons Attribution Non Commercial Share Alike 3.0
+                license. Print versions of the book are available on Amazon.com. <br><br>
+
+                The version found here has been updated with corrections and additions from hundreds of contributors. If
+                you see an error or have a suggestion, patches and issues are welcome in its GitHub repository. <br><br>
+
+            <h3>1. Getting Started</h3>
+            1.1 About Version Control <br>
+            1.2 A Short History of Git<br>
+            1.3 What is Git?<br>
+            1.4 The Command Line<br>
+            1.5 Installing Git<br>
+            1.6 First-Time Git Setup<br>
+            1.7 Getting Help<br>
+            1.8 Summary<br>
+            <h3>2. Git Basics</h3>
+            2.1 Getting a Git Repository<br>
+            2.2 Recording Changes to the Repository<br>
+            2.3 Viewing the Commit History<br>
+            2.4 Undoing Things<br>
+            2.5 Working with Remotes<br>
+            2.6 Tagging<br>
+            2.7 Git Aliases<br>
+            2.8 Summary<br>
+            <h3> 3. Git Branching</h3>
+            3.1 Branches in a Nutshell<br>
+            3.2 Basic Branching and Merging<br>
+            3.3 Branch Management<br>
+            3.4 Branching Workflows<br>
+            3.5 Remote Branches<br>
+            3.6 Rebasing<br>
+            3.7 Summary<br>
+            <h3>4. Git on the Server</h3>
+            4.1 The Protocols<br>
+            4.2 Getting Git on a Server<br>
+            4.3 Generating Your SSH Public Key<br>
+            4.4 Setting Up the Server<br>
+            4.5 Git Daemon<br>
+            4.6 Smart HTTP<br>
+            4.7 GitWeb<br>
+            4.8 GitLab<br>
+            4.9 Third Party Hosted Options<br>
+            4.10 Summary<br>
+            <h3>5. Distributed Git</h3>
+            5.1 Distributed Workflows<br>
+            5.2 Contributing to a Project<br>
+            5.3 Maintaining a Project<br>
+            5.4 Summary<br>
+            <h3> 6. GitHub</h3>
+            6.1 Account Setup and Configuration<br>
+            6.2 Contributing to a Project<br>
+            6.3 Maintaining a Project<br>
+            6.4 Managing an organization<br>
+            6.5 Scripting GitHub<br>
+            6.6 Summary<br>
+            <h3>7. Git Tools</h3>
+            7.1 Revision Selection<br>
+            7.2 Interactive Staging<br>
+            7.3 Stashing and Cleaning<br>
+            7.4 Signing Your Work<br>
+            7.5 Searching<br>
+            7.6 Rewriting History<br>
+            7.7 Reset Demystified<br>
+            7.8 Advanced Merging<br>
+            7.9 Rerere<br>
+            7.10 Debugging with Git<br>
+            7.11 Submodules<br>
+            7.12 Bundling<br>
+            7.13 Replace<br>
+            7.14 Credential Storage<br>
+            7.15 Summary<br>
+            <h3> 8. Customizing Git</h3>
+            8.1 Git Configuration<br>
+            8.2 Git Attributes<br>
+            8.3 Git Hooks<br>
+            8.4 An Example Git-Enforced Policy<br>
+            8.5 Summary<br>
+            <h3> 9. Git and Other Systems</h3>
+            9.1 Git as a Client<br>
+            9.2 Migrating to Git<br>
+            9.3 Summary<br>
+            <h3>10. Git Internals</h3>
+            10.1 Plumbing and Porcelain<br>
+            10.2 Git Objects<br>
+            10.3 Git References<br>
+            10.4 Packfiles<br>
+            10.5 The Refspec<br>
+            10.6 Transfer Protocols<br>
+            10.7 Maintenance and Data Recovery<br>
+            10.8 Environment Variables<br>
+            10.9 Summary<br>
+            <h3> A1. Appendix A: Git in Other Environments</h3>
+            A1.1 Graphical Interfaces<br>
+            A1.2 Git in Visual Studio<br>
+            A1.3 Git in Visual Studio Code<br>
+            A1.4 Git in IntelliJ / PyCharm / WebStorm / PhpStorm / RubyMine<br>
+            A1.5 Git in Sublime Text<br>
+            A1.6 Git in Bash<br>
+            A1.7 Git in Zsh<br>
+            A1.8 Git in PowerShell<br>
+            A1.9 Summary<br>
+            <h3>A2. Appendix B: Embedding Git in your Applications</h3>
+            A2.1 Command-line Git<br>
+            A2.2 Libgit2<br>
+            A2.3 JGit<br>
+            A2.4 go-git<br>
+            A2.5 Dulwich<br>
+            <h3> A3. Appendix C: Git Commands</h3>
+            A3.1 Setup and Config<br>
+            A3.2 Getting and Creating Projects<br>
+            A3.3 Basic Snapshotting<br>
+            A3.4 Branching and Merging<br>
+            A3.5 Sharing and Updating Projects<br>
+            A3.6 Inspection and Comparison<br>
+            A3.7 Debugging<br>
+            A3.8 Patching<br>
+            A3.9 Email<br>
+            A3.10 External Systems<br>
+            A3.11 Administration<br>
+            A3.12 Plumbing Commands<br>
+            </p>
+        </section>
+
+        <!-- section-5 -->
+        <section class="main-section" id="community">
+
+            <header>Community</header>
+
+            <p>
+                <h3>Mailing List</h3>
+                General questions or comments for the Git community can be sent to the mailing list by using the email
+                address git@vger.kernel.org. <br>
+
+                If you wish to report any possible bug for Git, please use this mailing list as well. <br>
+
+                You do not need to subscribe: you will be Cc'd in replies. Please keep the Cc list intact when replying
+                (use "Reply to all"). Greylisting may delay your first post for a few hours. Note also that the list
+                only accepts plain-text email; please disable HTML in your outgoing messages. <br> <br>
+
+                By subscribing (click here), you can make sure you're not missing follow-up discussions and you can also
+                learn about other development in the community. The list archive can be found on lore.kernel.org. <br><br>
+
+                Windows-specific questions can also be asked at Git for Windows' discussions (if in doubt whether your
+                question is Windows-specific, or if you prefer mailing lists or want to avoid GitHub, just use the
+                general Git mailing list). Please submit Windows-specific bugs to Git for Windows' bug tracker. <br><br>
+
+                If you're a downstream packager of Git, consider joining the Git packagers mailing list for low-volume
+                announcements from the developers, as well as other discussion related to packaging & porting Git. <br><br>
+
+               <h3> Bug Reporting</h3>
+                Bugs in git can be reported directly to the mailing list (see above for details). Note that you do not
+                need to subscribe to the list to send to it. You can help us out by attempting to reproduce the bug in
+                the latest released version of git, or if you're willing to build git from source, the next branch.
+                Sometimes an attempted fix may be pending in this branch, in which case your feedback as to whether the
+                fix worked for you will be appreciated. <br><br>
+
+                If you are using git 2.27.0 or later, you can run git bugreport in the repository where you observed the
+                bug, which generates a template to guide you through writing a useful bug report and gathers some
+                diagnostic information about your environment. <br><br>
+
+                Bugs related to this website can be reported at its issue tracker. Bugs related to the content of the
+                "Pro Git" book can be reported at its issue tracker. <br><br>
+
+                If you are new to submitting bugs, you might find this guide helpful for producing useful bug reports.
+                 <br><br>
+               <h3> Reporting Security Issues</h3>
+                Issues which are security relevant should be disclosed privately to the Git Security mailing list.
+                <br><br>
+               <h3> IRC Channel</h3>
+                If the manpages and this book aren’t enough and you need in-person help, you can try the #git channel on
+                the Libera Chat IRC server (irc.libera.chat). These channels are regularly filled with hundreds of
+                people who are all very knowledgeable about Git and are often willing to help. The #git-devel channel
+                welcomes Git development discussion, and might be able to help you contribute to Git. <br><br>
+
+                If you need specific help about one of the for-profit Git hosting sites, you might try their own IRC
+                channels (such as #github or #gitlab) on the same IRC server. <br><br>
+
+               <h3> Discord Server</h3>
+                The Git Community Discord Server also has many knowledgeable and helpful people. Additionally, it
+                provides a space to be able to voice chat about patches, designs, or anything else Git related.
+                <br><br>
+
+              <h3>  Newsletter</h3>
+                There is a monthly community newsletter called "Git Rev News", with its archive and its latest edition.
+                Information on how to subscribe can be found on the dedicated webpage.
+                <br><br>
+
+                <h3>Contributing to Git</h3>
+                The Documentation directory in the Git source code has several files of interest to developers who are
+                looking to help contribute. After reading the coding guidelines and code of conduct, you can learn how
+                to submit patches. If you are just starting out, you can read the My First Contribution tutorial. For
+                those looking to get more deeply involved, there is a howto for Git maintainers. <br><br>
+
+                The Git Developer Pages have a Hacking Git page which lists useful development resources. They also have
+                information for people applying to work on Git as part of programs like Outreachy or the Google Summer
+                of Code. <br><br>
+            </p>
+
+
+        </section>
+    </main>
+</body>
+
+</html>
