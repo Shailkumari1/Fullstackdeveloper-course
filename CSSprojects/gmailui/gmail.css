@@ -29,6 +29,7 @@
 span{
     padding: 10px;
     cursor: pointer;
+
 }
 
 .material-icons{
@@ -68,3 +69,53 @@ span{
     padding: 40px;
 }
 
+/* main section left side bar */
+
+.left_sidebar{
+    flex: 1;
+    max-width: 300;
+    padding-right: 20px;
+
+    
+}
+
+.sidebarCompose{
+
+     margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    color: rgb(100, 99, 99);
+    text-transform: capitalize;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgb(213, 231, 247);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0px 2px 5px -2px burlywood;
+    
+    
+}
+
+.sidebarOptions{
+
+     margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    height: 40px;
+    padding: 0px 10px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.sidebarOptions h3{
+    flex: 1;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
