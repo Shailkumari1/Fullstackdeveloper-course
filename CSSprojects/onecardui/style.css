@@ -1,23 +1,27 @@
 *{
    margin: 0;
    padding: 0;
-   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-family:Arial, Helvetica, sans-serif
    
 
 }
 
 
+
+
 .container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     
+    
 }
+
 
 nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: aliceblue;
+
 
 }
 
@@ -72,7 +76,7 @@ nav{
 
 .text-1{
 
-    font-size: 30px;
+    font-size: 20px;
 
 }
 
@@ -111,6 +115,7 @@ nav{
     max-width: 1200px;
     margin: 200px auto;
     font-size: 50px;
+    padding-bottom: 50px;
     
 
     
@@ -120,8 +125,9 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    
+    padding-top: 50px;
+    color: #1893f7
    
 
     
@@ -130,6 +136,8 @@ nav{
 
 .para-2{
     color: white;
+     display: flex;
      justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
 }
