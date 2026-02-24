@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Validation project</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class=" flex justify-center items-center bg-blue-300 w-[100vw] h-[100vh] m-0 m-auto ">
+
+        <div class="bg-white p-10 m-auto rounded-md ">
+          
+            <h1 class="font-bold text-blue-300 text-lg">Enter OTP</h1>
+            <p class="text-sm mt-4">We have sent an OTP to your registered email address.</p>
+            <div>
+                <input type="text" id="otp" class="border-1 border-blue-400 focus:outline-1 focus:outline-blue-400 h-[40px] w-full px-2 mt-4 text-blue-400 text-center text-sm rounded-md" placeholder="Enter OTP ">
+
+                <p id="error" class="text-sm text-red-400 mt-2 hidden">Invalid OTP, Please enter a 6-digit OTP</p>
+
+                <button onclick="VerifyOtp()" class="bg-blue-400 text-white w-full py-2 mt-4 rounded-md cursor-pointer">Verify OTP</button>
+
+                   <button onclick="resendOtp()" id="resendButton" class="mt-4 text-sm text-blue-400 cursor-pointer ">Resend OTP</button>
+                   <p id="timer" class="text-xs text-gray-400 mt-2 hidden">You can Resend otp in <span id="timeLeft" >30</span>s </p>
+            </div>
+
+        </div>
+
+        <script>
+
+            function VerifyOtp(){
+
+                const otp = document.getElementById('otp').value;
+                const error = document.getElementById('error'); 
+
+                if(/^\d{6}$/.test(otp)){
+                    alert("valdity is succesfully");
+                    error.classList.add('hidden');
+                }
+    
+                else{
+                    error.classList.remove('hidden');
+                }
+                }
+
+
+                function resendOtp(){
+                    const resendButton = document.getElementById('resendButton');
+                    const timer = document.getElementById('timer');
+                    const countdown = document.getElementById('timeLeft');
+                    alert('OTP has sent.....');
+
+                    timer.classList.remove('hidden');
+
+
+                    let timeLeft=30;
+                    resendButton.disabled = true;
+
+                    const Interval = setInterval(()=>{
+                        timeLeft--;
+
+                        countdown.textContent= timeLeft;
+
+
+                        if(timeLeft === 0)
+                        {
+                            clearInterval(Interval);
+
+                            resendButton.disable = false;
+
+                            timer.classList.add('hidden')
+
+                        }
+                    },1000);
+                }
+            
+            
+        </script>
+    </div>
+  </body>
+</html>
