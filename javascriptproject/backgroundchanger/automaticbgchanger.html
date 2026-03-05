@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Background-changer</title>
+</head>
+<body>
+
+    <script>
+
+        const bodychanger = document.querySelector('body');
+        const colors =['red','green','yellow','purple','pink'];
+
+        let i = 0;
+
+        setInterval(() =>{
+           
+        //    if(i <= colors.length){
+        //      bodychanger.style.backgroundColor = colors[i];
+        //       i++;
+        //    }
+
+        //    else{
+        //     i=0;
+             
+        //    }
+
+        const date = Date.now();
+        const format = String(date).slice(-6);
+
+        bodychanger.style.backgroundColor = `#${format}`
+
+           
+
+        },1000);
+    </script>
+    
+</body>
+</html>
