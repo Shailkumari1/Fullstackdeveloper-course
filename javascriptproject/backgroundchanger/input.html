@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input Backgroundchanger</title>
+
+            <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+
+    <div class="flex justify-center items-center p-10 ">
+    
+    <input id="input" type="text" placeholder="Type color name " class="border  rounded-md m-10 w-50 h-10 text-center">
+    <button id="button" class="border rounded-2xl w-50 h-10 bg-black text-white">Change Background</button>
+
+    </div>
+
+    <script>
+        const input = document.querySelector('#input');
+        const button = document.querySelector('#button');
+
+        function buttonclick(){
+            const value = input.value;
+            if(!value){
+                alert('Please enter a color name');
+                return;
+            }
+            document.body.style.backgroundColor = value;
+        }
+        button.addEventListener('click', buttonclick);
+    </script>
+</body>
+</html>
