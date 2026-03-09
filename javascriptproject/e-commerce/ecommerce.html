@@ -1,73 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-COMMERCE website</title>
 
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+
+    <style>
+        *{
+            
+            scroll-behavior: smooth;
+        }
+
+        .Section-container{
+            padding : 16px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns : repeat(auto-fill, minmax(375px, 1fr));
+            gap : 10px;
+            padding: 0 1em;
+            max-width: 1200px;
+            max-width: 0 auto;
+
+            
+        }
 
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-</head>
-<body>
 
-    <nav>
-        <div class="flex justify-between items-center bg-yellow-400 sticky top-0">
-            <div id="logo" class="flex items-center gap-2 p-3 font-bold text-2xl">
-                <span class="material-symbols-outlined text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 drop-shadow-lg">menu_book</span>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 drop-shadow-lg">
-                    YOURSCHOICE
-                </span>
-            </div>
+
+
+
+
+      #hero-section h1{
+    
+        animation: typing 2s ease-in-out infinite;
+      }
+
+      @keyframes typing {
+        0%
+         {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="sticky top-0 z-20">
+      <div class="flex justify-between items-center bg-yellow-400 sticky top-0">
+        <div id="logo" class="flex items-center gap-2 p-3 font-bold text-2xl">
+          <span
+            class="material-symbols-outlined text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 drop-shadow-lg"
+            >menu_book</span
+          >
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 drop-shadow-lg"
+          >
+            YOURSCHOICE
+          </span>
+        </div>
         <div class="flex justify-center items-center">
-            <span class="material-symbols-outlined text-blue-500 text-5xl p-2">search</span>
-            <input type="search" placeholder="Search books" class=" bg-white border-2 rounded-full h-10 w-100 text-center text-md text-blue-600 border-blue-500 focus: border-blue-700 focus:ring-blue-500 focus:outline-none">
+          <span class="material-symbols-outlined text-blue-500 text-5xl p-2"
+            >search</span
+          >
+          <input
+            type="search"
+            placeholder="Search books"
+            class="bg-white border-2 rounded-full h-10 w-100 text-center text-md text-blue-600 border-blue-500 focus: border-blue-700 focus:ring-blue-500 focus:outline-none"
+          />
         </div>
         <div class="flex justify-center items-center gap-2 p-2 m-4">
-            <span class="material-symbols-outlined text-5xl text-blue-500">account_circle</span>
-            <button class="text-md text-blue-500 ">SignIn</button>
-            <span class="material-symbols-outlined text-5xl text-blue-500">garden_cart</span>
-            <button class="text-md text-blue-500">cart</button>
+          <span class="material-symbols-outlined text-5xl text-blue-500"
+            >account_circle</span
+          >
+          <button class="text-md text-blue-500">SignIn</button>
+          <span class="material-symbols-outlined text-5xl text-blue-500"
+            >garden_cart</span
+          >
+          <button class="text-md text-blue-500">cart</button>
         </div>
-        </div>
+      </div>
 
-        
-
-        <div >
-            <ul class=" text-lg flex justify-center-safe gap-10 bg-gradient-to-r from-blue-500 via-cyan-400 to-teal-400 p-3 text-white font-bold">
-                <li><a href="#" class="hover:text-yellow-200 transition">Home</a></li>
-                <li><a href="#" class="hover:text-yellow-200 transition">Books</a></li>
-                <li><a href="#" class="hover:text-yellow-200 transition">Stationary</a></li>
-                <li><a href="#" class="hover:text-yellow-200 transition">Gifts</a></li>
-                <li><a href="#" class="hover:text-yellow-200 transition">Contact Us</a></li>
-            </ul>
-        </div>
+      <div>
+        <ul
+          class="text-lg flex justify-center-safe gap-10 bg-gradient-to-r from-blue-500 via-cyan-400 to-teal-400 p-3 text-white font-bold"
+        >
+          <li><a href="#" class="hover:text-yellow-200 transition">Home</a></li>
+          <li>
+            <a href="#" class="hover:text-yellow-200 transition">Books</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-yellow-200 transition">Stationary</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-yellow-200 transition">Gifts</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-yellow-200 transition">Contact Us</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <main>
-        
-        <section class="relative w-full h-[560px] mt-2 overflow-hidden rounded-lg">
-            <!-- background -->
-            <img
-                class="absolute w-full h-full object-cover brightness-40"
-                src="https://images.unsplash.com/photo-1746954546450-6cfc9b75920c?w=1920&auto=format&fit=crop&q=80&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNpbmdsZSUyMGJvb2t8ZW58MHx8MHx8fDA%3D"
-                
-                alt="books image"
-            >
+      <section
+        class="relative w-full h-[560px] mt-2 overflow-hidden rounded-lg"
+      >
+        <!-- background -->
+        <img
+          class="absolute w-full h-full object-cover brightness-40 mask-t-from-30%"
+          src="https://images.unsplash.com/photo-1746954546450-6cfc9b75920c?w=1920&auto=format&fit=crop&q=80&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNpbmdsZSUyMGJvb2t8ZW58MHx8MHx8fDA%3D"
+          alt="books image"
+        />
 
-            <!-- herosection? -->
-              <div class="absolute items-center flex flex-col jusify-center text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <h1 class="text-4xl font-bold text-white mb-6 animate-pulse ">Welcome to YourChoice</h1>
-                <p class="text-2xl text-white mb-6 animate-pulse ">Discover a world of books, stationery, and gifts at YourChoice. Explore our wide selection and find the perfect items for every occasion.</p>
-                <button class="bg-yellow-400 text-blue-500 font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition duration-300 animate-bounce ">Shop Now</button>
-              </div>
+        <!-- herosection? -->
+        <div id="hero-section"
+          class="absolute items-center flex flex-col jusify-center text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        >
+          <h1 class="text-4xl font-bold text-white mb-6 animate-pulse">
+            Welcome to YourChoice
+          </h1>
+          <p class="text-2xl text-white mb-6 animate-pulse">
+            Discover a world of books, stationery, and gifts at YourChoice.
+            Explore our wide selection and find the perfect items for every
+            occasion.
+          </p>
+          <button
+            class="bg-yellow-400 text-blue-500 font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition duration-300 animate-bounce"
+          >
+            Shop Now
+          </button>
+        </div>
+      </section>
+
+
+      </main>
+
+               <!-- cards section? -->
+
+          <section class="Section-container bg-gray-200 w-full mt-10 mb-10 rounded-lg">
+            <div class="container">
+
+                <div class="bg-gradient-to-r from-blue-500 via-cyan-400 to-teal-400 border-2 rounded-[10px] transition duration-300 ease-in-out text-center p-5 border-blue-400" >
+
+                    <div class="image">
+                        <img src="https://www.books2door.com/cdn/shop/files/Thumbnail_239846e1-006e-43fd-8918-9e27f0e2da78.jpg?v=1764668967" alt="fiction book">
+                    </div>
+                    <div class="content">
+
+                        <h1 class="text-white font-bold text-2xl p-2">Kristin Hannah 5 Books</h1>
+                        <p class="text-white p-2">Lorem ipsum dolor sit amet consectetur.</p>
+                        <button class="bg-yellow-400 font-bold rounded-full  text-blue-500 px-8 py-2 hover:bg-yellow-500 p-2">₹ 500 Buy Now</button>
+                            
+                    </div>
+
+
+                </div>
+
+                
+
+
+
+               <div class="bg-gradient-to-r from-blue-500 via-cyan-400 to-teal-400 border-2 rounded-[10px] transition duration-300 ease-in-out text-center p-5 border-blue-400" >
+
+                    <div class="image">
+                        <img src="https://www.books2door.com/cdn/shop/files/front_676aff29-4991-4d6d-bb1b-20853f5b2f85.jpg?v=1699143087" alt="fiction book">
+                    </div>
+                    <div class="content">
+
+                        <h1 class="text-white font-bold text-2xl p-2">Kristin Hannah 5 Books</h1>
+                        <p class="text-white p-2">Lorem ipsum dolor sit amet consectetur.</p>
+                        <button class="bg-yellow-400 font-bold rounded-full text-blue-500 px-8 py-2 hover:bg-yellow-500 p-2">₹ 500 Buy Now</button>
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="bg-gradient-to-r from-blue-500 via-cyan-400 to-teal-400 border-2 rounded-[10px] transition duration-300 ease-in-out text-center p-5 border-blue-400" >
+
+                    <div class="image">
+                        <img src="https://www.books2door.com/cdn/shop/files/Thumbnail_3_54002db8-88ba-49ea-a6f4-808898978fcb.jpg?v=1768924991" alt="fiction book">
+                    </div>
+                    <div class="content">
+
+                        <h1 class="text-white font-bold text-2xl p-2">Kristin Hannah 5 Books</h1>
+                        <p class="text-white p-2">Lorem ipsum dolor sit amet consectetur.</p>
+                        <button class="bg-yellow-400 font-bold rounded-full text-blue-500 px-8 py-2 hover:bg-yellow-500 p-2">₹ 500 Buy Now</button>
+                    </div>
+
+
+                </div>
+
+
+                
+
+            </div>
 
             
-        </section>
+          </section>
 
-    </main>
 
+          <footer>
+            <div class="bg-gradient-to-r from-blue-500 via-cyan-400 to-teal-400 text-white text-center p-4">
+              <p>&copy; 2024 YourChoice. All rights reserved.</p>
+            </div>
+          </footer>
     
-</body>
+  </body>
 </html>
