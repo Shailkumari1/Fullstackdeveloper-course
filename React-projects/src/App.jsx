@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
-import Counter from './counter'
+import Counter from './components/counter'
+import SetTheme from './components/SetTheme'
+
 
 
 function App() {
@@ -11,6 +10,10 @@ function App() {
 
   function handleIncreament(){
     setCount(count + 1)
+  }
+
+  function handleReset(){
+    setCount(0)
   }
 
   function handleDecreament(){
@@ -30,7 +33,13 @@ function App() {
        <Counter count={count}/>
       <button className="decreament" onClick={handleDecreament}>-</button>
 
+      
+      <button className="increament" onClick={handleReset}>Reset</button>
+    
       </div>
+
+      <SetTheme/>
+      
  
     </>
   )

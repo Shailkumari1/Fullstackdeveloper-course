@@ -6,4 +6,4 @@ function Counter(props) {
   )
 }
 
-export default Counter
+export default Counter 
