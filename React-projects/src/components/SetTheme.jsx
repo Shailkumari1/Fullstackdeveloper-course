@@ -46,7 +46,7 @@ function SetTheme() {
     // step 4 : use useReducer hook usage 
     const [state , dispatch] = useReducer(reducer , Initaialvalue);
 
-
+     // useContext 
 
     // change theme function
     function changeTheme (){
