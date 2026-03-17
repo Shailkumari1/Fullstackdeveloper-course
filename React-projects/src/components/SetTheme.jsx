@@ -1,4 +1,4 @@
-import React, { useState , useEffect , useRef , useReducer} from 'react'
+import React, { useState , useEffect , useRef , useReducer, useContext} from 'react'
 
 function SetTheme() {
     const [theme,setTheme] = useState("black")
