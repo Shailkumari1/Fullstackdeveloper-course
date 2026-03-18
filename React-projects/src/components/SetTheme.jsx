@@ -1,7 +1,9 @@
-import React, { useState , useEffect , useRef , useReducer, useContext} from 'react'
+import React, { useState , useEffect , useRef , useReducer} from 'react'
+
 
 function SetTheme() {
     const [theme,setTheme] = useState("black")
+    
 
     const themeRef = useRef(null);
 
@@ -46,7 +48,9 @@ function SetTheme() {
     // step 4 : use useReducer hook usage 
     const [state , dispatch] = useReducer(reducer , Initaialvalue);
 
-     // useContext 
+    
+
+   
 
     // change theme function
     function changeTheme (){
@@ -73,8 +77,13 @@ function SetTheme() {
         <button style={{fontSize : "30px", background : 'green'}} onClick={() => dispatch({type : 'inc' })}>+</button>
         <button style={{fontSize : "30px",background : 'green'}} onClick={()=> dispatch({type : 'dec'  })}>-</button>
         <button style={{fontSize : "30px",background : 'green'}} onClick={() => dispatch({type : 'reset' })}>Reset</button>
+
+
+            
+
         
     </div>
+
 
     
     

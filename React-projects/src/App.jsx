@@ -2,11 +2,16 @@ import { useState } from 'react'
 import './App.css'
 import Counter from './components/counter'
 import SetTheme from './components/SetTheme'
+import Childone from './components/Childone'
+
 
 
 
 function App() {
   const [count, setCount] = useState(0)
+
+
+  //counter 
 
   function handleIncreament(){
     setCount(count + 1)
@@ -39,6 +44,8 @@ function App() {
       </div>
 
       <SetTheme/>
+      <Childone />
+      
       
  
     </>
