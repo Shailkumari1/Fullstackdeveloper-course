@@ -49,7 +49,13 @@ function App() {
       gender: "female",
       age: "20",
       img: "https://imgs.search.brave.com/rTtpcxJ5NscYCzARqP8Y4JGdvSyDBVukyQQ8yPYxnBk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNzcv/MTk4LzI1OC9zbWFs/bC9jdXRlLTNkLWFu/aW1hdGVkLWdpcmwt/Y2hhcmFjdGVyLWRh/bmNpbmctYW5kLXBv/c2luZy1vbi1ncmVl/bi1zY3JlZW4tYmFj/a2dyb3VuZC1mcmVl/LXZpZGVvLmpwZw",
-    }
+    },
+    {
+      name: "komal singh",
+      gender: "female",
+      age: "20",
+      img: "https://imgs.search.brave.com/l18celnG7KAIkoT49BeY9ykgT5EnM6gA1axkQi4gQqg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE4Lzc5LzkyLzU4/LzM2MF9GXzE4Nzk5/MjU4MTRfcXp3ODJB/T3QyYXF1MDBzZ3gz/WHV6dzJTZUptTjNx/WFAuanBn",
+    },
   ];
 
   return (
